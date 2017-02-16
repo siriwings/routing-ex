@@ -1,3 +1,17 @@
-<h1>
-  {{title}}
-</h1>
+<header>
+  <nav>
+    <div class="nav-wrapper">
+      <a routerLink="/" routerLinkActive="active"
+         [routerLinkActiveOptions]="{exact:true}">My app</a>
+      <ul class="right">
+        <li><a routerLink="/" routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact:true}">home</a></li>
+        <li><a routerLink="/about" routerLinkActive="active">about</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>
