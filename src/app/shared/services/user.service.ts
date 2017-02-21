@@ -36,8 +36,8 @@ export class UserService {
   //find a specific user
   getUser(username) {
 
-    return usersPromise.then(users=>users.find(user=>user.username===username));
-
+    return usersPromise.then(users => users.find(user => user.username === username));
+  }
 
     /*
     let user = usersPromise.then(users => {
